@@ -1,0 +1,62 @@
+import java.awt.*;
+import java.util.*;
+import javax.swing.*;
+
+public class FitnessApp extends JFrame{
+	private JLabel label1;
+	private JLabel label2;
+	private JLabel label3;
+	private JLabel label4;
+	
+
+	private JTextField textfield1;
+	private JTextField textfield2;
+    private JTextField textfield3;
+    ;
+	
+	public FitnessApp() {
+		super("Fitness App");
+		setLayout(new FlowLayout());
+		label1= new JLabel("Name");
+       //label1.setToolTipText("Enter Name: ");
+		add(label1);
+		textfield1 = new JTextField(15);
+		add(textfield1);
+
+		label2= new JLabel("Age", SwingConstants.LEFT);
+        //label2.setToolTipText("Enter Age");
+		add(label2);
+		textfield2 = new JTextField(5);
+		add(textfield2);
+
+        label3= new JLabel("Weight", SwingConstants.LEFT);
+        //label3.setToolTipText("Enter Weight");
+		add(label3);
+		textfield3 = new JTextField(10);
+		add(textfield3);
+
+        String exercise[] = {"Push Up", "b", "c", "d", "e"};
+        JComboBox combo = new JComboBox(exercise);
+        label4= new JLabel("Exercise", SwingConstants.LEFT);
+        //label3.setToolTipText("Enter Weight");
+		add(label4);
+        
+
+        add(combo);
+        
+
+        
+    }
+
+        public static void main(String[] args) {
+            FitnessApp labelLayout= new FitnessApp();
+            labelLayout.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            labelLayout.setSize(420,320);
+            labelLayout.setVisible(true);
+           
+            
+        }
+    
+    
+
+}
