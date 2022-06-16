@@ -10,7 +10,6 @@ public class FitnessApp extends JFrame{
 
 	private JList exerciseJList;	
 	
-
 	private JTextField textfield1;
 	private JTextField textfield2;
     private JTextField textfield3;
@@ -48,20 +47,13 @@ public class FitnessApp extends JFrame{
 
 		JButton next = new JButton("Add");
 		add(next);
-
 		
 		exerciseJList = new JList(exercise);
 		exerciseJList.setVisibleRowCount(3);
 		add(new JScrollPane(exerciseJList));
 
-
 		JButton submit = new JButton("Submit");
-		add(submit);
-		
-		
-        
-
-        
+		add(submit);        
     }
 
         public static void main(String[] args) {
@@ -69,10 +61,5 @@ public class FitnessApp extends JFrame{
             labelLayout.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             labelLayout.setSize(420,320);
             labelLayout.setVisible(true);
-           
-            
         }
-    
-    
-
 }
