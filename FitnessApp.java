@@ -38,7 +38,7 @@ public class FitnessApp extends JFrame{
 		textfield3 = new JTextField(10);
 		add(textfield3);
 
-        String exercise[] = {"Push Up", "b", "c", "d", "e"};
+        String exercise[] = {"Push Up", "Pull up", "Sit up", "Squat", "Bench press"};
 
         JComboBox combo = new JComboBox(exercise);
         label4= new JLabel("Exercise", SwingConstants.LEFT);
@@ -56,10 +56,13 @@ public class FitnessApp extends JFrame{
 		add(submit);        
     }
 
+
         public static void main(String[] args) {
             FitnessApp labelLayout= new FitnessApp();
             labelLayout.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             labelLayout.setSize(420,320);
             labelLayout.setVisible(true);
+			labelLayout.getContentPane().setBackground(Color.getHSBColor(177, 240, 215));
         }
+
 }
