@@ -60,7 +60,7 @@ public class FitnessApp extends JFrame{
         public static void main(String[] args) {
             FitnessApp labelLayout= new FitnessApp();
             labelLayout.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-            labelLayout.setSize(420,320);
+            labelLayout.setSize(600,320);
             labelLayout.setVisible(true);
 			labelLayout.getContentPane().setBackground(Color.getHSBColor(177, 240, 215));
         }
