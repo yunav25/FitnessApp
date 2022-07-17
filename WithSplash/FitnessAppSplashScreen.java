@@ -1,4 +1,5 @@
 package WithSplash;
+
 import javax.swing.*;
 import java.awt.*;
  
@@ -22,7 +23,7 @@ public class FitnessAppSplashScreen {
     public void createGUI(){
         frame=new JFrame();
         frame.getContentPane().setLayout(null);//setting layout to null
-        frame.setUndecorated(false);//Turning off/on Title bar
+        frame.setUndecorated(true);//Turning off/on Title bar
         frame.setSize(600,400);//Setting size
         frame.setLocationRelativeTo(null);//Setting location to the center of screen
         frame.getContentPane().setBackground(Color.getHSBColor(177, 240, 215));//setting background color
