@@ -3,10 +3,10 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
- 
+ //testing
 //Creating LoginFrame class
 public class FitnessLoginFrame extends JFrame implements ActionListener {
- 
+
     Container container=getContentPane();
     JLabel userLabel=new JLabel("USERNAME");
     JLabel passwordLabel=new JLabel("PASSWORD");
@@ -76,6 +76,8 @@ public class FitnessLoginFrame extends JFrame implements ActionListener {
             pwdText = passwordField.getText();
             if (userText.equalsIgnoreCase("fitness") && pwdText.equalsIgnoreCase("12345")) {
                 JOptionPane.showMessageDialog(this, "Login Successful");
+                NewWindow newWindow = new NewWindow();
+                
             } else {
                 JOptionPane.showMessageDialog(this, "Invalid Username or Password");
             }

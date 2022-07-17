@@ -9,7 +9,8 @@ public class MainClass {
             FitnessLoginFrame frame=new FitnessLoginFrame();
             frame.setTitle("Login Form");
             frame.setVisible(true);
-            frame.setBounds(10,10,370,600);
+            frame.setSize(600,400);
+            frame.setLocationRelativeTo(null);
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             frame.setResizable(false);
  
