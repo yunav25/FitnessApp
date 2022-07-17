@@ -14,10 +14,10 @@ public class NewWindow extends JFrame{
 	JTextField Weightfield = new JTextField();
 	JLabel Exerciselabel = new JLabel("Enter Exercise");
 	String exercise[] = {"Push Up", "Pull up", "Sit up", "Squat", "Bench press"};
-	JComboBox combo = new JComboBox(exercise);
+	//JComboBox combo = new JComboBox(exercise);
 	JButton next = new JButton("Add");
 	JButton submit = new JButton("Submit");
-	JList<String> exerciseJList = new JList(exercise);
+	//JList<String> exerciseJList = new JList(exercise);
 	
 	
 	
@@ -35,7 +35,7 @@ public class NewWindow extends JFrame{
 	 	frame.add(Weightlabel);
 	 	frame.add(Weightfield);
 	 	frame.add(Exerciselabel);
-	 	frame.add(combo);
+	 	//frame.add(combo);
 	 	frame.add(next);
 	 	frame.add(submit);
 	 	
@@ -51,7 +51,7 @@ public class NewWindow extends JFrame{
 	}
 
 	public void setLocationAndSize(){
-		exerciseJList.setVisibleRowCount(3);
+		//exerciseJList.setVisibleRowCount(3);
 		
 		
 		usernamelabel.setBounds(0,0,100,25);
@@ -61,10 +61,10 @@ public class NewWindow extends JFrame{
 		Weightlabel.setBounds(300,0,100,25);
 		Weightfield.setBounds(300,40,100,20);
 		Exerciselabel.setBounds(0,100,100,25);
-		combo.setBounds(0,130,100,20);
+		//combo.setBounds(0,130,100,20);
 		next.setBounds(145,130,100,25);
 		submit.setBounds(300,230,100,25);
-		exerciseJList.setBounds(400,130,100,25);
+		//exerciseJList.setBounds(400,130,100,25);
 	}
 
 	public void addComponentsToContainer(){
@@ -75,10 +75,10 @@ public class NewWindow extends JFrame{
 		container.add(Weightlabel);
 	 	container.add(Weightfield);
 	 	container.add(Exerciselabel);
-	 	container.add(combo);
+	 	//container.add(combo);
 	 	container.add(next);
 	 	container.add(submit);
-	 	container.add(exerciseJList);
+	 	//container.add(exerciseJList);
 	}
 
 }
