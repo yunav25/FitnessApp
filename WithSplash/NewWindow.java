@@ -6,18 +6,29 @@ import java.awt.*;
 public class NewWindow extends JFrame{
 	JFrame frame = new JFrame();
 	Container container = getContentPane();
-	JLabel usernamelabel = new JLabel("Enter Username");
-	JTextField usernamefield = new JTextField();
-	JLabel Agelabel = new JLabel("Enter Age");
-	JTextField Agefield = new JTextField();
-	JLabel Weightlabel = new JLabel("Enter Weight");
-	JTextField Weightfield = new JTextField();
-	JLabel Exerciselabel = new JLabel("Enter Exercise");
+
+	JLabel Exerciselabel = new JLabel("Select Exercise");
 	String exercise[] = {"Push Up", "Pull up", "Sit up", "Squat", "Bench press"};
-	//JComboBox combo = new JComboBox(exercise);
+	JComboBox combo = new JComboBox(exercise);
+	
+	JLabel Replabel = new JLabel("Enter Reps");
+	JTextField Repfield = new JTextField();
+
+	JLabel Setlabel = new JLabel("Enter Sets");
+	JTextField Setfield = new JTextField();
+
+	JLabel Durationlabel = new JLabel("Enter Duration");
+	JTextField Durationfield = new JTextField();
+
+	JLabel Calorielabel = new JLabel("Enter Calories");
+	JTextField Caloriefield = new JTextField();
+
+	
+	
 	JButton next = new JButton("Add");
 	JButton submit = new JButton("Submit");
-	//JList<String> exerciseJList = new JList(exercise);
+
+	JList<String> exerciseJList = new JList(exercise);
 	
 	
 	
@@ -28,19 +39,25 @@ public class NewWindow extends JFrame{
 		addComponentsToContainer();
 		
 		frame.getContentPane().setBackground(Color.getHSBColor(177, 240, 215));
-		frame.add(usernamelabel);
-	 	frame.add(usernamefield);
-	 	frame.add(Agelabel);
-	 	frame.add(Agefield);
-	 	frame.add(Weightlabel);
-	 	frame.add(Weightfield);
+		
+
 	 	frame.add(Exerciselabel);
-	 	//frame.add(combo);
+	 	frame.add(combo);
+		
+		frame.add(Replabel);
+		frame.add(Repfield);
+		frame.add(Setlabel);
+		frame.add(Setfield);
+		frame.add(Durationlabel);
+		frame.add(Durationfield);
+		frame.add(Calorielabel);
+		frame.add(Caloriefield);
+
 	 	frame.add(next);
 	 	frame.add(submit);
 	 	
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.setSize(600,400);
+		frame.setSize(1200,400);
 		frame.setLocationRelativeTo(null);
 		frame.setLayout(null);
 		frame.setVisible(true);
@@ -51,34 +68,35 @@ public class NewWindow extends JFrame{
 	}
 
 	public void setLocationAndSize(){
-		//exerciseJList.setVisibleRowCount(3);
+		exerciseJList.setVisibleRowCount(3);
 		
 		
-		usernamelabel.setBounds(0,0,100,25);
-		usernamefield.setBounds(0,40,100,20);
-		Agelabel.setBounds(145,0,100,25);
-		Agefield.setBounds(145,40,100,20);
-		Weightlabel.setBounds(300,0,100,25);
-		Weightfield.setBounds(300,40,100,20);
-		Exerciselabel.setBounds(0,100,100,25);
-		//combo.setBounds(0,130,100,20);
-		next.setBounds(145,130,100,25);
+	
+		
+		Exerciselabel.setBounds(5,20,100,25);
+		combo.setBounds(5,30,100,20);
+		Replabel.setBounds(120, 130, 75, 20);
+		next.setBounds(400,300,100,25);
 		submit.setBounds(300,230,100,25);
-		//exerciseJList.setBounds(400,130,100,25);
+		exerciseJList.setBounds(400,130,100,25);
 	}
 
 	public void addComponentsToContainer(){
-		container.add(usernamelabel);
-		container.add(usernamefield);
-		container.add(Agelabel);
-		container.add(Agefield);
-		container.add(Weightlabel);
-	 	container.add(Weightfield);
+	
+		
 	 	container.add(Exerciselabel);
-	 	//container.add(combo);
+		container.add(Replabel);
+		container.add(Repfield);
+		container.add(Setlabel);
+		container.add(Setfield);
+		container.add(Durationlabel);
+		container.add(Durationfield);
+		container.add(Calorielabel);
+		container.add(Caloriefield);
+	 	container.add(combo);
 	 	container.add(next);
 	 	container.add(submit);
-	 	//container.add(exerciseJList);
+	 	container.add(exerciseJList);
 	}
 
 }
