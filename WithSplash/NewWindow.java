@@ -1,7 +1,7 @@
 
 package WithSplash;
 
-package fitnessAppBranch;
+
 
 
 import javax.swing.*;
@@ -28,8 +28,7 @@ public class NewWindow extends JFrame{
 	String[] exercises = {"Push Up\", \"Pull up\", \"Sit up\", \"Squat\", \"Bench press"};
 	
 	JComboBox combo = new JComboBox(exercise);
-	JButton next = new JButton("Add");
-	JButton submit = new JButton("Submit");
+	
 	
 	JList exerciselist = new JList(exercises);
 	JScrollPane jcp = new JScrollPane(exerciselist);
@@ -112,7 +111,10 @@ public class NewWindow extends JFrame{
 		container.add(Weightlabel);
 	 	container.add(Weightfield);
 	 	container.add(Exerciselabel);
-
+		container.add(combo);
+	 	container.add(next);
+	 	container.add(submit);
+	 	container.add(jcp);
 	 	//container.add(combo);
 	 	container.add(next);
 	 	container.add(submit);
@@ -120,10 +122,7 @@ public class NewWindow extends JFrame{
 	}
 
 
-	 	container.add(combo);
-	 	container.add(next);
-	 	container.add(submit);
-	 	container.add(jcp);
+	 	
 	}
 
 
@@ -147,7 +146,3 @@ public class NewWindow extends JFrame{
 		
 	// 	return textField;
 	// }
-	
-
-
-}
