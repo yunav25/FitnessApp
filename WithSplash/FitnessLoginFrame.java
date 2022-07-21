@@ -76,7 +76,7 @@ public class FitnessLoginFrame extends JFrame implements ActionListener {
             pwdText = passwordField.getText();
             if (userText.equalsIgnoreCase("fitness") && pwdText.equalsIgnoreCase("12345")) {
                 JOptionPane.showMessageDialog(this, "Login Successful");
-                NewWindow newWindow = new NewWindow();
+                Workout workout = new Workout();
                 
             } else {
                 JOptionPane.showMessageDialog(this, "Invalid Username or Password");

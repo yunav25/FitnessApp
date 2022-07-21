@@ -13,7 +13,6 @@ public class NewWindow extends JFrame{
 
 	JLabel Exerciselabel = new JLabel("Select Exercise");
 	String exercise[] = {"Push Up", "Pull up", "Sit up", "Squat", "Bench press"};
-<<<<<<< HEAD
 	JComboBox combo = new JComboBox(exercise);
 	
 	JLabel Replabel = new JLabel("Enter Reps");
@@ -30,10 +29,8 @@ public class NewWindow extends JFrame{
 
 	
 	
-=======
 
 	//JComboBox combo = new JComboBox(exercise);
->>>>>>> cd7612802d9febc2ad94eecb2b70f56efaf3242d
 	JButton next = new JButton("Add");
 	JButton submit = new JButton("Submit");
 
@@ -42,7 +39,6 @@ public class NewWindow extends JFrame{
 
 	String[] exercises = {"Push Up\", \"Pull up\", \"Sit up\", \"Squat\", \"Bench press"};
 	
-	JComboBox combo = new JComboBox(exercise);
 	
 	
 	JList exerciselist = new JList(exercises);
@@ -65,7 +61,7 @@ public class NewWindow extends JFrame{
 		
 
 	 	frame.add(Exerciselabel);
-<<<<<<< HEAD
+
 	 	frame.add(combo);
 		
 		frame.add(Replabel);
@@ -77,10 +73,10 @@ public class NewWindow extends JFrame{
 		frame.add(Calorielabel);
 		frame.add(Caloriefield);
 
-=======
+
 
 	 	//frame.add(combo);
->>>>>>> cd7612802d9febc2ad94eecb2b70f56efaf3242d
+
 	 	frame.add(next);
 	 	frame.add(submit);
 	 	
@@ -102,7 +98,7 @@ public class NewWindow extends JFrame{
 	}
 
 	public void setLocationAndSize(){
-<<<<<<< HEAD
+
 		exerciseJList.setVisibleRowCount(3);
 		
 		
@@ -114,19 +110,14 @@ public class NewWindow extends JFrame{
 		next.setBounds(400,300,100,25);
 		submit.setBounds(300,230,100,25);
 		exerciseJList.setBounds(400,130,100,25);
-=======
+
 
 		//exerciseJList.setVisibleRowCount(3);
 
 
 		
 		
-		usernamelabel.setBounds(0,0,100,25);
-		usernamefield.setBounds(0,40,100,20);
-		Agelabel.setBounds(145,0,100,25);
-		Agefield.setBounds(145,40,100,20);
-		Weightlabel.setBounds(300,0,100,25);
-		Weightfield.setBounds(300,40,100,20);
+		
 		Exerciselabel.setBounds(0,100,100,25);
 
 		//combo.setBounds(0,130,100,20);
@@ -139,14 +130,13 @@ public class NewWindow extends JFrame{
 		submit.setBounds(300,230,100,25);
 		jcp.setBounds(400,130,200,50);
 
->>>>>>> cd7612802d9febc2ad94eecb2b70f56efaf3242d
 	}
 
 	public void addComponentsToContainer(){
 	
 		
 	 	container.add(Exerciselabel);
-<<<<<<< HEAD
+
 		container.add(Replabel);
 		container.add(Repfield);
 		container.add(Setlabel);
@@ -156,13 +146,13 @@ public class NewWindow extends JFrame{
 		container.add(Calorielabel);
 		container.add(Caloriefield);
 	 	container.add(combo);
-=======
+
 		container.add(combo);
 	 	container.add(next);
 	 	container.add(submit);
 	 	container.add(jcp);
 	 	//container.add(combo);
->>>>>>> cd7612802d9febc2ad94eecb2b70f56efaf3242d
+
 	 	container.add(next);
 	 	container.add(submit);
 	 	container.add(exerciseJList);
