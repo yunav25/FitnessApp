@@ -6,10 +6,10 @@ public class MainClass {
         new FitnessAppSplashScreen();//Creating object of SplashScreenDemo class
 
             //Creating object of LoginFrame class and setting some of its properties
-            FitnessLoginFrame frame=new FitnessLoginFrame();
-            frame.setTitle("Login Form");
+            SignUp frame=new SignUp();
+            frame.setTitle("Sign Up Form");
             frame.setVisible(true);
-            frame.setSize(600,400);
+            frame.setSize(700,800);
             frame.setLocationRelativeTo(null);
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             frame.setResizable(false);
