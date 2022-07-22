@@ -132,7 +132,16 @@ public class Workout extends JFrame {
         JButton view = new JButton("View Records");
         JButton logout= new JButton("Log Out");
         
+        view.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Records records = new Records();
 
+        }
+
+        });
+
+        
         // Register + create Event Listener
         log.addActionListener(new ActionListener() {
             @Override
